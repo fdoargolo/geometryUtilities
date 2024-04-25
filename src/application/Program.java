@@ -27,13 +27,19 @@ public class Program {
 		double areaA = triangleA.area();
 		double areaB = triangleB.area();
 
-		System.out.printf("Area of Triangle A: %.4f%n",areaA);
-		System.out.printf("Area of Triangle B: %.4f%n",areaB);
+		witchIsBigger(areaA, areaB);
 		
 		sc.close();
-	
-
 	}
-
-
+	
+	public static void witchIsBigger(double a, double b) {
+		if(a > b) {
+			System.out.printf("Triangle A is bigger, with the area of: %.4f%n", a);
+			System.out.printf("Triangle B has an area of: %.2f%n", b);
+		}else {
+			System.out.printf("Triangle B is bigger, with the area of: %.4f%n", b);
+			System.out.printf("Triangle A has an area of: %.2f%n", a);
+		}
+	}
 }
+
